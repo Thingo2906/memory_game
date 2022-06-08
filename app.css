@@ -1,0 +1,100 @@
+body{
+    background-color: bisque;
+  }
+  
+  
+  h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    font-size: 50px;
+    color: rgb(14, 69, 51);
+  }
+  h3{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    font-size: 50px;
+    color: rgb(69, 14, 29);
+  
+  }
+  
+  button{
+    background-color: #4c5baf;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 12px;
+    top: 50%;
+    left: 45%;
+    position: relative;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .hero-image {
+    background-image: url("penguin_kare.gif");
+    background-color: #cccccc;
+    height: 570px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #current-score {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    font-size: 50px;
+    color: rgb(14, 69, 51);
+  }
+  
+  #game div {
+    border: 1px solid black;
+    width: 15%;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+    margin-left: 1.2cm;
+  }
+  
+  #start.playing {
+    margin-top: -125vh;
+    transition: margin-top 1s;
+  }
+  #start.playing + #game {
+    display: flex;
+  }
+  #game{
+    display: none;
+  }
+  
+  .container {
+    flex-wrap: wrap;
+  }
+  .container:hover {
+    cursor: pointer;
+  }
+  
+  #end {
+    display: none;
+  }
+  #end.game-over {
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.534);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+  }

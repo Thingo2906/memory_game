@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="container" id="start"></div>
+      <h1>Memory Game!</h1>
+      <button onclick="startGame()" id="start-button" class="btn">Start!</button>   
+      <div class="hero-image"></div>  
+    </div>
+
+    <div class="col-2">
+      <div id="current-score"></div>
+    </div>
+
+    <div class="container" id="game">
+    </div>
+
+    <div id="end">
+      <h1>You win!</h1>
+      <h4 id="final-score"></h4>
+      <form action="index.html">
+        <button type="submit">PLAY AGAIN !</button>
+      </form> 
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
